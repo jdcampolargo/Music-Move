@@ -12,7 +12,16 @@ Install spotipy (use **pip3 install spotipy**) <br >
 ### 3. Run the program <br >
 Run the program by using the terminal and navigating to the directory you cloned this repo into. Type in **python3 musicMove.py** to start the program. Follow the intended dirctions and BAM! Your Apple Music playlists are now Spotify playlists! <br >
 
+## Additional Thoughts
+You need to create a Spotify App in order to get the API credentials to write on the spotify_accessor.py. How? Check out this [post](https://developer.spotify.com/documentation/general/guides/authorization/app-settings/).
+
+
+
 ## Current Issues
+
+### Limit of 100 Songs
+You can only export 100 songs at a time. 
+
 ### Missing Songs <br >
 The script I'm using to retrieve the Spotify identifier for an Apple Music song simply compares the title, artist, and or album depending on search results. Some songs don't have the exact same title in both services which results in the script failing to retrieve an identifier for some songs. At this time the program transfers over 90% of the songs most of the time. The songs that do not get transfered over are printed out on the console for you to add them yourself if you wish.
 
